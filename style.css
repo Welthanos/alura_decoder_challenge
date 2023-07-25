@@ -1,0 +1,126 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F3F5FC;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90rem;
+    height: 100vh;
+    background-color: #F3F5FC;
+}
+
+.logo {
+    width: 10rem;
+    margin-top: 4rem;
+}
+
+.decoder {
+    width: 80%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.decoder textarea {
+    width: 40rem;
+    height: 40rem;
+    background-color: #F3F5FC;
+    color: #838383;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: sans-serif, Arial;
+    margin: 10rem 5rem 10rem 4rem;
+    padding: 1rem;
+    border: solid 3px #bfcbdb;
+    border-radius: 15px;
+    resize: none;
+}
+
+.decoder textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.decoder .actions {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+}
+
+span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: sans-serif, Arial;
+    margin-bottom: 1rem;
+    margin-left: 4.5rem;
+}
+
+.decoder .buttons {
+    display: flex;
+}
+
+button {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: 1px solid;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2.5rem;
+}
+
+button#encrypt {
+    background: #0A3871;
+    color: #fff;
+}
+
+button#decrypt {
+    background: #D8DFE8;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40rem;
+    height: 50rem;
+    margin: 4rem auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 1px 20px 5px #d7dbe9;
+    overflow: auto;
+}
+
+.empty-history-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.history img {
+    background: none;
+}
+
+.empty-history-text h2,
+p {
+    background: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.empty-history-text p {
+    font-size: 1rem;
+    font-weight: 500;
+}

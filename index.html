@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="assets/logo.svg" alt="Logo da Alura" />
+        </div>
+
+        <div class="decoder">
+
+            <textarea name="text" id="text" placeholder="Digite seu texto..."></textarea>
+
+            <div class="actions">
+                <span><img src="assets/exclamation.svg" />Apenas letras minúsculas e sem acento.</span>
+
+                <div class="buttons">
+                    <button id="encrypt" onclick="encrypt()">Criptografar</button>
+                    <button id="decrypt" onclick="decrypt()">Descriptografar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" history">
+            <img src="assets/empty-history.png" alt="Histórico vazio" />
+            <div class="empty-history-text">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

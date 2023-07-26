@@ -16,7 +16,6 @@
         </div>
 
         <div class="decoder">
-
             <textarea name="text" id="text" placeholder="Digite seu texto..."></textarea>
 
             <div class="actions">
@@ -27,17 +26,23 @@
                     <button id="decrypt" onclick="decrypt()">Descriptografar</button>
                 </div>
             </div>
-
         </div>
 
-        <div class=" history">
-            <img src="assets/empty-history.png" alt="Histórico vazio" />
-            <div class="empty-history-text">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <div class="result-container">
+
+            <div id="empty">
+                <img src="assets/container-empty.png" />
+
+                <div id="text-empty">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+
+            <div id="filled" style="display: none;">
+                <p id="text-result"></p>
             </div>
         </div>
-
     </div>
 
     <script src="script.js"></script>

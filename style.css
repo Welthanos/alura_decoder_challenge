@@ -88,7 +88,7 @@ button#decrypt {
     background: #D8DFE8;
 }
 
-.history {
+.result-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,25 +102,39 @@ button#decrypt {
     overflow: auto;
 }
 
-.empty-history-text {
+.result-container #empty {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: #fff;
+    justify-content: space-evenly;
+    background-color: #fff;
 }
 
-.history img {
+.result-container #empty img {
     background: none;
 }
 
-.empty-history-text h2,
-p {
+.result-container #text-empty {
+    display: flex;
+    flex-direction: column;
     background: #fff;
-    margin-bottom: 1.5rem;
 }
 
-.empty-history-text p {
+.result-container #text-empty h2,
+p {
+    background: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.result-container #text-empty p {
     font-size: 1rem;
     font-weight: 500;
+}
+
+.result-container #filled {
+    height: 100%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 2rem 2rem 0 2.5rem;
+    background-color: #fff;
 }

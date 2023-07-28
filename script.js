@@ -6,21 +6,9 @@ const secretWords = {
     "u": "ufat"
 };
 
-const reversedSecretWords = {};
-
 // Localiza as <div>s opcionais do container de resultado
 const emptyDiv = document.getElementById("empty");
 const filledDiv = document.getElementById("filled");
-
-// Inverte a ordem de chave e valor de secretWords e armazena em resversedSecretsWords
-function reverseSecretWords() {
-
-    for (const key in secretWords) {
-        const value = secretWords[key];
-        reversedSecretWords[value] = key;
-    }
-}
-
 
 function encrypt() {
     let text = document.getElementById("text").value;
@@ -45,12 +33,10 @@ function decrypt() {
     let text = document.getElementById("text").value;
 
     // Inverte a ordem de chave e valor para descriptografar
-    reverseSecretWords();
-
-    for (const [key, value] of Object.entries(reversedSecretWords)) {
+    for (const [key, value] of Object.entries(secretWords)) {
 
         // Dá o replace de forma global (todos os elementos)
-        text = text.replace(new RegExp(key, 'g'), value);
+        text = text.replace(new RegExp(value, 'g'), key);
     }
 
     const decryptedText = document.getElementById("text-result");

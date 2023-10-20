@@ -1,7 +1,10 @@
 * {
     margin: 0 auto;
     padding: 0;
-    background-color: #F3F5FC;
+}
+
+body {
+    background-color: #01142a;
 }
 
 .container {
@@ -13,7 +16,7 @@
 }
 
 .logo {
-    width: 10rem;
+    width: 8rem;
     margin-top: 4rem;
 }
 
@@ -95,7 +98,7 @@ button#decrypt {
     justify-content: space-evenly;
     width: 40rem;
     height: 50rem;
-    margin: 4rem auto;
+    margin: 4rem 2.5rem 4rem 0;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 5px 1px 20px 5px #d7dbe9;
